@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Interview Assistant</title>
+    <link rel="stylesheet" href="../font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="container-fluid">
+<div class="row" id="header">
+    <div class="col-2 align-content-center text-center">
+        <img class="rounded-circle" id="profile-image" src="../images/profile-pic.jpeg">
+        <br>
+        <div id="user-name">Annie Chhoing Dolma</div>
+    </div>
+
+    <div class="col-10" id="header-website-info">
+        <h1 class="text-capitalize text-right h1" id="header-website-text">Interview Assistant</h1>
+        <div class="text-danger" id="option-logout">
+            Logout &nbsp;
+            <i class="fa fa-eject"></i>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="body-content">
+    <div class="row">
+        <nav class="col-lg-2 col-sm-3 " id="navbar">
+            <div id="nav-content">
+                <div class="nav-item active text-center"><span><i class="fa fa-map-marker"></i> Interviews</span></div>
+                <a href="my-profile.html">
+                    <div class="nav-item text-center"><span><i class="fa fa-map-marker"></i> My Profile</span></div>
+                </a>
+
+            </div>
+        </nav>
+
+        <!--The middle containt-->
+        <div class="col-lg-10 col-sm-9   container-fluid " id="content">
+            <!--The header of the body-->
+            <div class="row content-header text-center text-uppercase">
+                <div class="col-md-1">
+                    <i class="fa fa-angle-left  fa-4x "></i>
+                </div>
+                <div id="content-header" class="col-md-11">
+                    <div class="h1">Intern Interview 2080</div>
+                    <span class="h5 mr-5">May 3,2020</span><span class="h5 ml-5">Meeting room 3</span>
+                </div>
+
+
+            </div>
+            <hr id="header-separtion-line"/>
+            <!--The Main content-->
+            <div id="content-detail" class="container-fluid">
+                <fieldset>
+                    <legend><strong>Other Interviewers</strong></legend>
+                    <div class="container-fluid pl-4">
+                        <div class="row text-center">
+                            <div class="card card-clear card-hover-effect">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                            <div class="card card-clear card-hover-effect">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                            <div class="card card-clear card-hover-effect">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                            <div class="card card-clear card-hover-effect">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Interviewees</strong></legend>
+                    <div class="container-fluid pl-4">
+                        <!--The search bar at the begining.-->
+                        <div class="row search-block input-group ">
+                            <div class="form-group col-auto form-inline">
+                                <i class="fa fa-search " style="position:absolute; left: 16pt;"></i>
+                                <input class="form-control padded-left-6x" title="search interviewees">
+                            </div>
+                        </div>
+                        <!--The Card views in interviewees-->
+                        <div class="row align-content-center text-center">
+
+                            <!--Interviewees assigned to this meeting -->
+                            <div class="card card-clear card-hover-effect" data-toggle="modal"
+                                 data-target="#form-interviewee-detail">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                            <div class="card card-clear card-hover-effect" data-toggle="modal"
+                                 data-target="#form-interviewee-detail">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                            <div class="card card-clear card-hover-effect" data-toggle="modal"
+                                 data-target="#form-interviewee-detail">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+
+                            <div class="card card-clear card-hover-effect" data-toggle="modal"
+                                 data-target="#form-interviewee-detail">
+                                <div class="card-body">
+                                    <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                                </div>
+                                <div class="card-footer">
+                                    Name Surname
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="form-interviewee-detail" class="modal fade" role="dialog"
+     aria-labelledby="addIntervieweeModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                        </div>
+                        <div class="col-6">
+                            <div class="h1 mb-3 text-center">
+                                Dip Kiran Pradhan Newar
+                            </div>
+                            <div class="text-secondary text-center">
+                                Baheshower- Kathmandu
+                            </div>
+                        </div>
+                        <div class="col-3 align-content-center">
+                            <div class="match-parent-width align-content-center ">
+                                <input class="input-score form-control" type="text" title="obtained score"/>
+                                <!--<i class="fa fa-check"></i>-->
+                            </div>
+                            <div class="match-parent-width text-center mt-2">Score for Algorithms</div>
+                        </div>
+                        <div class="close">
+                            <i class="fa fa-window-close" data-dismiss="modal"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form id="login_form" action="" method="post">
+                    <fieldset class="pl-2">
+                        <legend class="mb-3">Educational Details</legend>
+                        <div class="ml-3">
+                            <table class="table table-hover">
+                                <tr class="thead-light">
+                                    <th></th>
+                                    <th>Degree</th>
+                                    <th>Institution</th>
+                                    <th>Marks</th>
+                                    <th>Remarks</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>Bachelors</td>
+                                    <td>**</td>
+                                    <td>**</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>+2</td>
+                                    <td>**</td>
+                                    <td>**</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset class="pl-2   a">
+                        <legend class="mb-3">Documents</legend>
+                        <div class="row ml-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fa fa-file-image fa-2x"></i>
+                                </div>
+                                <div class="card-footer text-center">
+                                    Bachelor Transcript
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fa fa-file-image fa-2x"></i>
+                                </div>
+                                <div class="card-footer text-center">
+                                    CV
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+
+</html>

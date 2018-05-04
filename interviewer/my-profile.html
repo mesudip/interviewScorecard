@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Interview Assistant</title>
+    <link rel="stylesheet" href="../font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="container-fluid">
+<div class="row" id="header">
+    <div class="col-2 align-content-center text-center">
+        <img class="rounded-circle" id="profile-image" src="../images/profile-pic.jpeg">
+        <br>
+        <div id="user-name">Annie Chhoing Dolma</div>
+    </div>
+
+    <div class="col-10" id="header-website-info">
+        <h1 class="text-capitalize text-right h1" id="header-website-text">Interview Assistant</h1>
+        <div class="text-danger" id="option-logout">
+            Logout &nbsp;
+            <i class="fa fa-eject"></i>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="body-content">
+    <div class="row">
+        <nav class="col-lg-2 col-sm-3 " id="navbar">
+            <div id="nav-content">
+                <div class="nav-item active text-center"><span><i class="fa fa-map-marker"></i> Interviews</span></div>
+                <a href="my-profile.html">
+                    <div class="nav-item text-center"><span><i class="fa fa-map-marker"></i> My Profile</span></div>
+                </a>
+
+            </div>
+            <!--<div class="nav-item active">Interviewers</div>-->
+            <!--<div class="nav-item">Admins</div>-->
+        </nav>
+
+        <!--The middle containt-->
+        <div class="col-lg-10 col-sm-9   container-fluid " id="content">
+            <!--The header of the body-->
+            <div class="row h1 content-header text-center text-uppercase">
+                <div id="content-header" class="col-md-12">
+                    Edit Profile
+                </div>
+            </div>
+            <hr id="header-separtion-line"/>
+            <!--The Main content-->
+            <div id="content-detail" class="container-fluid">
+                <form id="edit-form">
+                    <div class="form-group float-right col-md-2" id="profile-image-upload">
+                        <img src="../images/profile-pic.jpeg">
+                        <div class="text-center">Profile Picture</div>
+
+                        <div class="text-center">
+                            <strong> Upload New File</strong>
+                        </div>
+
+                    </div>
+                    <div class="form-group ">
+                        <label class="form-text" for="input-name">Full Name</label>
+                        <input type="text" class="form-control col-sm-6 col-lg-7 shifted-right " id="input-name"
+                               value="Annie Chhoing Dolma" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-email">Email address</label>
+                        <input type="email" class="form-control col-sm-6 col-lg-7 shifted-right" id="input-email"
+                               value="user@lisnepal.com.np" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-designation">Designation</label><br/>
+                        <select class="custom-select form-control col-sm-6 col-lg-7 shifted-right"
+                                id="input-designation" disabled>
+                            <option>Designation 1</option>
+                            <option>Designation 2</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br/>
+                        <button type="button" class="btn btn-info" data-target="#modal-change-password"
+                                data-toggle="modal">Change Password
+                        </button>&nbsp;&nbsp;
+                        <br/>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-change-password" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form class="modal-content">
+            <div class="modal-header text-center mb-3">
+                <h2>Change Password</h2>
+                <i class="fa fa-window-close close" data-dismiss="modal"></i>
+
+            </div>
+            <div class="modal-body">
+                <div class="form-group form-inline">
+                    <label class="col-4" for="change-password-current"> Current Password</label>
+                    <input type="password" class="form-control col-8" id="change-password-current">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="col-4" for="change-password-new-1">New Password</label>
+                    <input type="password" class="form-control col-8" id="change-password-new-1">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="col-4" for="change-password-new-2">Confirm Password</label>
+                    <input type="password" class="form-control col-8" id="change-password-new-2">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-info">
+                    Change Password
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+
+</html>

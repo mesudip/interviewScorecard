@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Interview Assistant</title>
+    <link rel="stylesheet" href="../font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="container-fluid">
+<div class="row" id="header">
+    <div class="col-2 align-content-center text-center">
+        <img class="rounded-circle" id="profile-image" src="../images/profile-pic.jpeg">
+        <br>
+        <span id="user-name">Annie Chhoing Dolma</span>
+    </div>
+    <div class="col-9" id="header-website-info">
+        <h1 class="text-capitalize text-right h1" id="  header-website-text">Interview Assistant</h1>
+        <div class="text-danger" id="option-logout  ">
+            Logout &nbsp;
+            <i class="fa fa-eject"></i>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid" id="body-content">
+    <div class="row">
+        <nav class="col-lg-2 col-sm-3 " id="navbar">
+            <div id="nav-content">
+                <a href="home.html">
+                    <div class="nav-item active text-center"><span><i class="fa fa-map-marker"></i> Interviews</span>
+                    </div>
+                </a>
+                <a href="interviewer-list.html">
+                    <div class="nav-item text-center"><span><i class="fa fa-map-marker"></i> Interviewers</span>
+                    </div>
+                </a>
+                <a href="admin-list.html">
+                    <div class="nav-item text-center"><span><i class="fa fa-map-marker"></i> Admin</span></div>
+                </a>
+            </div>
+        </nav>
+
+        <!--The middle containt-->
+        <div class="col-lg-10 col-sm-9   container-fluid " id="content">
+            <!--The header of the body-->
+            <div class="row content-header text-center text-uppercase">
+                <div id="content-header" class="col-md-12">
+                    <div class="h1">Intern Interview 2080</div>
+                    <span class="h5 mr-5">May 3,2020</span><span class="h5 ml-5">Meeting room 3</span>
+                    <span class="float-right ml-3">
+                        <a href="interview-edit.html">
+                        <button type="button" class="btn-info float-right">View Info </button>
+                    </a>
+                    </span>
+
+                </div>
+                <div class="float-right text-right mt-4 match-parent-width mr-5">
+
+                </div>
+            </div>
+            <hr id="header-separtion-line"/>
+            <!--The Main content-->
+            <div class="container-fluid mt-4">
+
+                <table class="table table-hover table-responsive-md">
+                    <tr class="thead-light">
+                        <th></th>
+                        <th>Name</th>
+                        <th>Algorighms</th>
+                        <th>Software engineering</th>
+                        <th>Evaluation Criteria 3</th>
+                        <th>Total Marks</th>
+                    </tr>
+                    <tr data-target="#form-result-detail-1" data-toggle="modal">
+                        <th>1</th>
+                        <td>Interviewee 1</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>23</td>
+                    </tr>
+                    <tr data-target="#form-result-detail-1" data-toggle="modal">
+                        <th>2</th>
+                        <td>Interviewee 2</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>43</td>
+                    </tr>
+
+                    <tr data-target="#form-result-detail-1" data-toggle="modal">
+                        <th>3</th>
+                        <td>Interviewee 3</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>43</td>
+                    </tr>
+
+                    <tr data-target="#form-result-detail-1" data-toggle="modal">
+                        <th>4</th>
+                        <td>Interviewee 4</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>43</td>
+                    </tr>
+
+                    <tr data-target="#form-result-detail-1" data-toggle="modal">
+                        <th>5</th>
+                        <td>Interviewee 5</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>43</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="form-result-detail-1" class="modal fade" role="dialog"
+     aria-labelledby="addIntervieweeModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="rounded-circle card-image" src="../images/profile-pic.jpeg">
+                        </div>
+                        <div class="col-6">
+                            <div class="h1 mb-3 text-center">
+                                Dip Kiran Pradhan Newar
+                            </div>
+                            <div class="text-secondary text-center">
+                                Baheshower- Kathmandu
+                            </div>
+                        </div>
+                        <div class="col-3 text-right">
+                            <div class="mb-4"><span>Rank :</span> <span class="h3"><strong> 4</strong></span></div>
+                            <div><span>Total Marks :</span> <span class="h2"> <strong>54</strong></span></div>
+                        </div>
+
+                        <div class="close">
+                            <i class="fa fa-window-close" data-dismiss="modal"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+
+                    <div class="h4 mt-2"><strong>Algorithms</strong></div>
+                    <div class="row ml-1">
+                        <div class="col-7">
+                            <ul>
+                                <li>Comment of one Interviewer</li>
+                                <li>Comment of another Interviewer</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <span>Marks :</span>
+                            <span class="h3"><strong>54</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="h4 mt-2"><strong>Database and SQL</strong></div>
+                    <div class="row ml-1">
+                        <div class="col-7">
+                            <ul>
+                                <li>Comment of one Interviewer</li>
+                                <li>Comment of another Interviewer</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <span>Marks :</span>
+                            <span class="h3"><strong>44</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="h4 mt-2"><strong>Software Engineering</strong></div>
+                    <div class="row ml-1">
+                        <div class="col-7">
+                            <ul>
+                                <li>Comment of one Interviewer</li>
+                                <li>Comment of another Interviewer</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <span>Marks :</span>
+                            <span class="h3"><strong>84</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+
+</html>
