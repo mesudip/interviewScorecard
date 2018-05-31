@@ -4,8 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HrController extends Controller
+class InterviewController extends Controller
 {
+    function testme(){
+      return "success";
+    }
+    //
+    //
     //
     //
     function getAllInterviewe(){
@@ -15,6 +20,10 @@ class HrController extends Controller
 
     }
 
+    function getid(Request $request){
+
+      return $request;
+    }
     function openInterview(){
 
     }
