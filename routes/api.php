@@ -21,7 +21,11 @@ Route::get('/username/{id}',function ($id){
   return $id;
 } );
 
-Route::post('/login','LoginController@login');
+Route::post('/login',[
+  'uses'=>'LoginController@loginuser',
+  'as'=>'custom.login'
+]
+);
 
 Route::prefix('admin')->group(function(){
   //GET LIST OF interview
